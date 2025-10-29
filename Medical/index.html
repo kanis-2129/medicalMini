@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top contact strip -->
+  <div class="top-strip">
+    <div class="container">
+      <div class="contact">
+        <span class="phone">📞 <a href="tel:+1234567890">+1 234 567 890</a></span>
+        <span class="email">✉️ <a href="mailto:help@medicalshop.example">help@medicalshop.example</a></span>
+      </div>
+      <div class="right-links">
+        <a href="#">Login</a>
+        <a href="#">Cart (0)</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main navbar -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="#">MS Clinic</a>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-toggle" aria-label="Open search" title="Search">
+          <!-- magnifier icon (SVG) -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+
+        <div class="search-wrapper" aria-hidden="true">
+          <input type="search" class="search-input" placeholder="Search medicines, brands, symptoms..." aria-label="Search">
+          <button class="search-submit" aria-label="Submit search">Search</button>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner: medical shop hero with upload and folder picker -->
+  <section class="banner">
+    <div class="container banner-inner">
+      <div class="banner-preview" id="bannerPreview">
+        <img src="" alt="Medical shop banner" id="bannerImg" />
+        <div class="banner-overlay" id="bannerOverlay">MS Clinic</div>
+      </div>
+
+      <div class="banner-controls">
+        <button id="uploadImageBtn" class="btn">Upload Description</button>
+        <input id="imageInput" type="file" accept="image/*" hidden>
+
+       
+      </div>
+
+      <div class="banner-description" id="bannerDescription" hidden>
+        <textarea id="descriptionText" placeholder="Enter banner description..."></textarea>
+        <div class="desc-actions">
+          <button id="saveDescBtn" class="btn primary">Save</button>
+          <button id="cancelDescBtn" class="btn">Cancel</button>
+        </div>
+      </div>
+      
+      <div class="folder-list" id="folderList" hidden>
+        <strong>Selected folder contents:</strong>
+        <ul id="folderFiles"></ul>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+   
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
